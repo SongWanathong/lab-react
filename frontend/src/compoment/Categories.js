@@ -4,7 +4,7 @@ import { Row, Menu } from 'antd';
 class Categories extends Component {
     redermenu = ()=>{
       return  this.props.categoriesList.map(x=>(
-        <Menu.Item  key={x.id}>{x.name}</Menu.Item>
+        <Menu.Item  onClick={this.props.handleCategoriesId(x.id)} key={x.id}>{x.name}</Menu.Item>
       ))
     }
     render() {

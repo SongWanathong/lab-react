@@ -22,7 +22,7 @@ function App() {
 
           </Header>
 
-          <Content style={{height:'100vh'}}>
+          <Content  style={{backgroundColor:'white'}}>
             <Switch>
               <Route exact path='/todoapp' component={Todolistapp} />
               <Route exact path='/slide' component={Slide} />

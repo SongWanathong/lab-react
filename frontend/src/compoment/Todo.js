@@ -9,7 +9,7 @@ class Todo extends Component {
     )
 
     render() {
-        const {handletick,handledelete}= this.props
+        const { handletick, handledelete } = this.props
 
         return (
 
@@ -20,12 +20,12 @@ class Todo extends Component {
                     dataSource={this.props.todo}
                     renderItem={todo => (
                         <List.Item>
-    <Row type="flex" justify='space-around' style={{width:'220px'}} >
-    <span  onClick={handletick(todo.id)}  style={{ padding: '5px', border: 'solid', backgroundColor:todo.ticked ? 'green':undefined}}>   </span>
-                     {todo.text}
-        <Button onClick={handledelete(todo.id)} type='danger'>X</Button>
-                        </Row>
-                            </List.Item>
+                            <Row type="flex" justify='space-around' style={{ width: '220px' }} >
+                                <span onClick={handletick(todo.id)} style={{ padding: '5px', border: 'solid', backgroundColor: todo.ticked ? 'green' : undefined }}>   </span>
+                                {todo.text}
+                                <Button onClick={handledelete(todo.id)} type='danger'>X</Button>
+                            </Row>
+                        </List.Item>
 
                     )}
                 />
