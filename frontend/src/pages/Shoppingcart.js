@@ -65,7 +65,6 @@ class Shoppingcart extends Component {
     }
 
     handlecartdeleteallproduct =()=>{
-        console.log('cartgogo')
         this.setState({
             cart:[]
         })
